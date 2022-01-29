@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1 class="h1">STUDYPOOL</h1>
+        <form id="form">
+            <input type="text" id="name" placeholder="Enter your name">
+            <input type="email"  id="email" placeholder="Enter your email">
+            <input type="password" id="password" placeholder="Enter your password">
+            <input type="submit" value="SignUp">
+        </form>
+    <script>
+        const form = document.getElementById('form');
+        form.addEventListener('submit', registerUser);
+
+        async function registerUser(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('name').value;
+            const password = document.getElementById('password').value;
+            const email = document.getElementById('email').value;
+
+
+            const result = await fetch('/api/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username,
+                    password,
+                    email
+                })
+            }).then(res => res.json())
+            if (result.status === 'ok') {
+                alert('Success');
+            } else {
+                alert(result.error);
+            }
+        }
+    </script>
+</body>
+</html>

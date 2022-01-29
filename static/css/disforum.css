@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('../img/bg.png');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.navbar{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img{
+    width: 4%;
+    margin: 2px;
+}
+.logo-chat{
+    font-size: 50px;
+    font-family: cursive;
+}
+.container{
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    /* width: 60%; */
+    height: 65vh;
+    border: 5px solid black;
+    border-radius: 20px;
+    overflow-y: auto;
+}
+.message{
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 20px;
+    font-size: 21px;
+    width: 25%;
+}
+.left{
+
+    float: left;
+    clear: both;
+    margin: 5px;
+}
+.right{
+  
+    float: right;
+    clear: both;
+    margin: 5px;
+}
+.send{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.leave{
+    padding: 5px;
+    background: transparent;
+    font-family: cursive;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+#form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 990px;
+    width: 100%;
+}
+#form input{
+    width: 90%;
+    margin: 10px;
+    padding: 2px 15px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: cursive;
+    background: transparent;
+    outline: none;
+}
+.btn-send{
+    padding: 4px;
+    width: 10%;
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-family: cursive;
+}

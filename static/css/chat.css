@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    height: 70px;
+    background: transparent;
+    /* opacity: 0.2; */
+}
+.content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content li{
+    list-style: none;
+}
+.content li a{
+    font-family: cursive;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+.content li a:hover{
+    color: red ;  
+}
+.left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+   
+    /* background: red;   */
+}
+.right{
+    width: 50%;
+    /* background: yellow; */
+}
+.logo-text{
+    font-size: 35px;
+    font-weight: bold;
+    word-spacing: 15px;
+    letter-spacing: 5px;
+    font-family: cursive;
+}
+.img{
+    width: 5%;
+    margin: 0px 50px;
+}
+.background{
+    background: rgba(0,0,0,0.7) url('../img/chat2.jpg') center;
+    background-size:cover;
+    background-blend-mode: darken;
+}
+.sec-one{
+    width: 100vw;
+    height: 88vh;
+    display: flex;
+    color: white;
+    font-family: cursive;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+.center{
+    font-size: 100px;
+    word-spacing:0px ;
+    letter-spacing:1px ;
+    margin: 20px;
+    color: aquamarine;
+}
+h2{
+    font-size: 40px;
+}
+.para{
+    font-size: 25px;
+    margin: 20px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 40px;
+}
+.btn{
+    width: 110px;
+    height: 45px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 19px;
+    font-family: cursive;
+    background: #46f446;
+}
